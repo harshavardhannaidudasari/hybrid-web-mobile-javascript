@@ -20,4 +20,13 @@ exports.config = {
             'appium:newCommandTimeout': 120,
         },
     ],
+    before: async () => {
+        // appium:appPackage/appActivity alone don't reliably foreground a
+        // pre-installed system app like Settings on every UiAutomator2
+        // version - activate it explicitly so tests don't start on the
+        // home screen.
+        await browser.execute('mobile: startActivity', {
+            intent: `${env.android.appPackage}/${env.android.appActivity}`,
+        });
+    },
 };
