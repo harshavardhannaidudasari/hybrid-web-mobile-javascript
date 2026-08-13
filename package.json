@@ -1,0 +1,21 @@
+{
+  "name": "hybrid-web-mobile-javascript",
+  "version": "1.0.0",
+  "description": "Hybrid web + mobile automation framework using WebdriverIO (plain JavaScript)",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "test:web": "wdio run ./wdio.web.conf.js",
+    "test:mobile": "wdio run ./wdio.mobile.conf.js"
+  },
+  "devDependencies": {
+    "@wdio/appium-service": "^9.0.0",
+    "@wdio/cli": "^9.0.0",
+    "@wdio/local-runner": "^9.0.0",
+    "@wdio/mocha-framework": "^9.0.0",
+    "@wdio/spec-reporter": "^9.0.0",
+    "appium": "^2.11.0",
+    "appium-uiautomator2-driver": "^3.7.0",
+    "chai": "^5.1.1"
+  }
+}
