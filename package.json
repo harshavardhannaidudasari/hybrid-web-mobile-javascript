@@ -6,7 +6,8 @@
   "type": "commonjs",
   "scripts": {
     "test:web": "wdio run ./wdio.web.conf.js",
-    "test:mobile": "wdio run ./wdio.mobile.conf.js"
+    "test:mobile": "wdio run ./wdio.mobile.conf.js",
+    "test:mobile:ios": "wdio run ./wdio.ios.conf.js"
   },
   "devDependencies": {
     "@wdio/appium-service": "^9.0.0",
