@@ -1,5 +1,7 @@
 # Hybrid Web + Mobile Automation Framework (JavaScript)
 
+[![CI](https://github.com/harshavardhannaidudasari/hybrid-web-mobile-javascript/actions/workflows/ci.yml/badge.svg)](https://github.com/harshavardhannaidudasari/hybrid-web-mobile-javascript/actions/workflows/ci.yml)
+
 A single [WebdriverIO](https://webdriver.io) framework driving **both**
 browser and native mobile tests. WebdriverIO speaks the WebDriver/WebDriver
 BiDi protocol either way — the only thing that changes between web and
